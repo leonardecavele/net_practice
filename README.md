@@ -166,6 +166,8 @@ until they reach their destination.
 ### OSI Layers
 
 The OSI model is a conceptual model that divides network communication into 7 layers.
+Each layer has a specific role, which makes it easier to understand where a network
+problem comes from.
 
 ```txt
 7. Application
@@ -175,6 +177,28 @@ The OSI model is a conceptual model that divides network communication into 7 la
 3. Network
 2. Data Link
 1. Physical
+```
+
+In NetPractice, the most important layers are:
+
+- **Layer 3 - Network**: handles IP addresses, subnets, gateways, and routing.
+- **Layer 2 - Data Link**: handles local communication between machines on the same network, where switches operate.
+- **Layer 1 - Physical**: represents the physical connection, such as cables or links between devices.
+
+The upper layers are still important in real networking, but they are less visible
+in this project because NetPractice focuses mainly on IP configuration and routing.
+
+```mermaid
+flowchart TD
+    A["7. Application<br>Network services used by programs"]
+    B["6. Presentation<br>Data format and encoding"]
+    C["5. Session<br>Connection management"]
+    D["4. Transport<br>TCP / UDP communication"]
+    E["3. Network<br>IP addressing and routing"]
+    F["2. Data Link<br>Local network frames and switches"]
+    G["1. Physical<br>Cables, signals, and links"]
+
+    A --> B --> C --> D --> E --> F --> G
 ```
 
 [CLOUDFARE](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
