@@ -43,10 +43,7 @@ You can find the 10 exported configuration files at the root of this repository:
 └── ...
 ```
 
-## Concepts And Resources
-
-AI was used to provide additional explanations and to get a clearer first overview of the project.
-[CHATGPT](https://www.chatgpt.com)
+## Resources
 
 ### TCP/IP Addressing
 
@@ -54,7 +51,7 @@ TCP/IP is the set of protocols used by machines to communicate on a network.
 IP is used to identify machines with IP addresses and to route packets from one network to another.
 TCP is used to create reliable communication between programs. It checks that data arrives correctly, in the right order, and retransmits missing data when needed.
 
-[IBM](https://www.ibm.com/docs/en/aix/7.2.0?topic=protocol-tcpip-addressing)
+[IBM](https://www.ibm.com/docs/en/aix/7.2.0?topic=protocol-tcpip-addressing)  
 [MICROSOFT](https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
 
 ### IP Addresses
@@ -65,7 +62,7 @@ used between them.
 
 Example: `192.168.1.10`
 
-[FORTINET](https://www.fortinet.com/resources/cyberglossary/what-is-ip-address#:~:text=IP%20Address%20Definition%20And%20Explanation,use%20the%20internet%20to%20communicate.)
+[FORTINET](https://www.fortinet.com/resources/cyberglossary/what-is-ip-address#:~:text=IP%20Address%20Definition%20And%20Explanation,use%20the%20internet%20to%20communicate.)  
 [WIKIPEDIA](https://en.wikipedia.org/wiki/IP_address)
 
 ### Subnet Masks
@@ -82,7 +79,7 @@ The same mask can also be written in CIDR notation:
 255.0.0.0     = /8
 ```
 
-[WIKIPEDIA](https://en.wikipedia.org/wiki/Subnet)
+[WIKIPEDIA](https://en.wikipedia.org/wiki/Subnet)  
 [YOUTUBE](https://www.youtube.com/watch?v=s_Ntt6eTn94)
 
 ### Network Addresses
@@ -109,7 +106,7 @@ Example with `192.168.1.10/24`:
 Broadcast address: 192.168.1.255
 ```
 
-[WIKIPEDIA](https://en.wikipedia.org/wiki/Broadcast_address#:~:text=A%20broadcast%20address%20is%20a,by%20all%20network%2Dattached%20hosts.)
+[WIKIPEDIA](https://en.wikipedia.org/wiki/Broadcast_address#:~:text=A%20broadcast%20address%20is%20a,by%20all%20network%2Dattached%20hosts.)  
 [IONOS](https://www.ionos.com/digitalguide/server/know-how/broadcast-address/)
 
 ### Default Gateways
@@ -126,7 +123,7 @@ A routing table tells a machine where to send packets. Each route usually has a
 destination network, a subnet mask, and a next hop. If no specific route matches,
 the default route is used.
 
-[WIKIPEDIA](https://en.wikipedia.org/wiki/Routing_table)
+[WIKIPEDIA](https://en.wikipedia.org/wiki/Routing_table)  
 [GEEKSFORGEEKS](https://www.geeksforgeeks.org/computer-networks/routing-tables-in-computer-network/)
 
 ### Routers
@@ -135,7 +132,7 @@ Routers connect different networks together. Each router interface belongs to a
 specific subnet, and the router forwards packets between those subnets when its
 routes are configured correctly.
 
-[WIKIPEDIA](https://en.wikipedia.org/wiki/Router_(computing))
+[WIKIPEDIA](https://en.wikipedia.org/wiki/Router_(computing))  
 [CLOUDFARE](https://www.cloudflare.com/learning/network-layer/what-is-a-router/)
 
 ### Switches
@@ -159,8 +156,8 @@ place them in the same subnet.
 Internet routing is the process of forwarding packets across multiple networks
 until they reach their destination.
 
-[WIKIPEDIA](https://en.wikipedia.org/wiki/IP_routing)
-[SUPERUSER](https://superuser.com/questions/1781245/how-routing-works-on-internet)
+[WIKIPEDIA](https://en.wikipedia.org/wiki/IP_routing)  
+[SUPERUSER](https://superuser.com/questions/1781245/how-routing-works-on-internet)  
 [MEDIUM](https://medium.com/@hnasr/network-routing-a-deep-dive-1ecd4757223d)
 
 ### OSI Layers
@@ -168,25 +165,6 @@ until they reach their destination.
 The OSI model is a conceptual model that divides network communication into 7 layers.
 Each layer has a specific role, which makes it easier to understand where a network
 problem comes from.
-
-```txt
-7. Application
-6. Presentation
-5. Session
-4. Transport
-3. Network
-2. Data Link
-1. Physical
-```
-
-In NetPractice, the most important layers are:
-
-- **Layer 3 - Network**: handles IP addresses, subnets, gateways, and routing.
-- **Layer 2 - Data Link**: handles local communication between machines on the same network, where switches operate.
-- **Layer 1 - Physical**: represents the physical connection, such as cables or links between devices.
-
-The upper layers are still important in real networking, but they are less visible
-in this project because NetPractice focuses mainly on IP configuration and routing.
 
 ```mermaid
 flowchart TD
@@ -201,6 +179,10 @@ flowchart TD
     A --> B --> C --> D --> E --> F --> G
 ```
 
-[CLOUDFARE](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)
-[WIKIPEDIA](https://en.wikipedia.org/wiki/OSI_model)
+[CLOUDFARE](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/)  
+[WIKIPEDIA](https://en.wikipedia.org/wiki/OSI_model)  
 [GEEKSFORGEEKS](https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/)
+
+
+## AI USAGE
+AI was used to provide additional explanations and to get a clearer first overview of the project.  
